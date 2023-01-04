@@ -1,0 +1,55 @@
+<!doctype>
+<html> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+    <title> payment page </title>
+        <style>
+		.main{ font-size:25;
+		color:black;
+		text-align:left;
+		padding:100px;
+		margin:100px;
+		border:10px solid black;}
+		
+		.clearfix {
+  overflow: auto;
+  background-image:linear-gradient(to right ,purple ,  pink , white);
+  color:yellow;
+}
+
+.center {
+  padding: 10px;
+  /* vertical centering of <h1> */
+  text-align: center;
+  /* horizontal centering of <h1> */
+}
+
+.logo {
+  position:absolute;
+  left: 150px;
+  top: 150px;
+  border: 1px solid blue;
+  z-index: 1;
+  /* Make the logo and <h1> overlap */}
+        </style>
+</head>
+
+<body style="background-image:linear-gradient(to right ,purple ,  pink , white);">
+<div class="clearfix center">
+  <img class="logo" src="C:\Users\Keya Shah\Desktop\wt project      sem 2\download2.jpg" alt="Logo" width="278" height="100">
+</div>
+<div class="main">
+<h1 style="color:yellow;text-align:center;">kesha beauty</h1> 
+<h3> Payment credentials</h3>
+<form action="placeorder.html" target="_blank" validate>
+     <label for="paym"> Enter the card details : </label>
+	 <input type="tel" id="paym" name="paym"><br><br>
+	 
+	 <label for="pay"> Delivery address: </label>
+	 <textarea name="pay" rows="2" cols="28" "> enter address: </textarea><br><br>
+	 
+	 <input type="submit" value="pay.">
+</form>
+</div>
+</body>
+</html>

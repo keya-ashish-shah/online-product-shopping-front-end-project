@@ -1,0 +1,158 @@
+<!doctype>
+<html>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+<title> home page </title>
+<script>
+function la(arc)
+{
+window.location=arc;
+} 
+</script>
+<style>
+	.main{ font-size:20;
+	color:black;
+	border:5px blue;
+	}
+	
+header{ background-color:purple;
+               color:white;
+			   border:10px groove yellow;
+}
+footer{background-color:purple;
+               color:white;
+			   font-size:10px;
+			   border:10px groove yellow;
+}
+
+ nav ul{ padding:0px;
+ position:relative;
+list-style:none;
+
+}
+ 
+ 
+ nav ul li{ display:inline;
+margin:5px;}
+
+.h{text-align:left;
+ color:blue; 
+ background-color:purple;
+ }
+ form{
+ display:inline;} 
+ 
+
+
+.center {
+  padding: 10px;
+  /* vertical centering of <h1> */
+  text-align: center;
+  /* horizontal centering of <h1> */
+}
+
+.logo {
+  position:absolute;
+  left: 100px;
+  top: 40px;
+  border: 1px solid blue;
+  z-index: 1;
+  /* Make the logo and <h1> overlap */}
+	</style>
+</style>
+</head>
+
+
+<body style="background-color:pink; border:2px blue;"> 
+<div class=main>
+<div class="clearfix center">
+  <img class="logo" src="C:\Users\Keya Shah\Desktop\wt project      sem 2\download2.jpg" alt="Logo" width="278" height="100">
+</div>
+<header>
+<h1 style="color:yellow ; text-align:center">kesha beauty</h1> 
+  <nav>
+        <ul>
+            <li><a href="aboutus.html" style="color:yellow;">About us</a></li>
+            <li>
+            <form action="payment.html">
+                <label for="aloevera"></label>
+				<select name="aloevera" id="aloevera" onchange="la(this.value)">
+				<option value="payment.html">Aloevera</option>
+				<option value="payment.html">Aloevera Facewash</option>
+				<option value="payment.html">Aloevera Hairwash</option>
+				<option value="payment.html">Aloevera Lotion</option>
+				<option value="payment.html">Aloevera Serum</option>
+				<option value="payment.html">Aloevera Sunscreen</option>
+				</select>
+			</form>
+			</li>
+
+
+			<li>
+			<form action="payment.html">
+			    <label for="haldi"></label>
+				<select name="haldi" id="aloevera" onchange="la(this.value)">
+				<option value="payment.html" disabled selected>Haldi</option>
+				<option  value="payment.html">Haldi Facewash</option>
+				<option value="payment.html">Haldi  Hairwash</option>
+				<option value="payment.html">Haldi  Lotion</option>
+				<option value="payment.html">Haldi  Serum</optiom>
+				<option value="payment.html">Haldi  Sunscreen</option>
+				</select>
+			</form>
+			</li>
+
+			<li> 
+				<form action="payment.html">
+				<label for="neem"></label>
+				<select name="neem" id="aloevera" onchange="la(this.value)">
+				<option value="payment.html" disabled selected>Neem</option>
+				<option value="payment.html">Neem Facewash</option>
+				<option value="payment.html">Neem Hairwash</option>
+				<option value="payment.html">Neem  Lotion</option>
+				<option value="payment.html">Neem Serum</optiom>
+				<option value="payment.html">Neem  Sunscreen</option>
+				</select>
+				</form>
+			</li>
+
+
+			<li>
+				<form action="payment.html">
+				<label for="sandal"></label>
+				<select name="sandal" id="aloevera" onchange="la(this.value)">
+				<option value="payment.html" disabled selected>sandal </option>
+				<option value="payment.html">sandal Facewash</option>
+				<option value="payment.html">sandal  Hairwash</option>
+				<option value="payment.html">sandal  Lotion</option>
+				<option value="payment.html">sandal  Serum</optiom>
+				<option value="payment.html">sandal   Sunscreen</option>
+				</select>
+				</form>
+			</li>
+			<li><a href="login.html" style="color:yellow;">Login</li>
+			<li><a href="registration.html" style="color:yellow;">Register</li>
+			</ul>
+		</nav>
+</header>
+<br>
+<h1>Roll no : 1249 Name: Keya Ashish Shah</h1> 
+<img src="C:\Users\Keya Shah\Desktop\wt project      sem 2\cover image.jpg" alt="no net" width="650px" height="650px" ></img>
+<img src="C:\Users\Keya Shah\Desktop\wt project      sem 2\coverimage2.jpg" alt="" width="650px" height="650px" ></img>
+<h3 style="color:blue;"> from the customer's</h3>
+<p style="color:blue;">Must experience!<br>my skin had various problems like acne and oilypots but ever since I have started using the rituals recommended by @keshabeauty my skin is at its best. thank yuh @keshabeauty!   -Nirali Patel.
+</p>
+
+<p style="color:blue;">Must have the natural aloevera facewash!<br>I had dry skin and oily acne with combination skin type my friend  recommended me @keshabeauty's natural skin care products. and now my skin is all glowing! I really recommend these products. -Niyati Nair.
+</p>
+<p></p>
+<footer>
+<p>we manufacture and operate only in India </p>
+<p> head-office: Gujarat,India.</p>
+<p> contact-details: 079-275680.</p> 
+<p> email us at: keshabeauty@gmail.com</p>
+<p> all rights reserved.</p>
+</footer>
+</div>  
+</body>
+</html>

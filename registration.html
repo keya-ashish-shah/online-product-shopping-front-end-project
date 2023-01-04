@@ -1,0 +1,139 @@
+<!doctype>
+<html> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+    <title> registration page </title>
+        <style>
+		.main{ font-size:25;
+		color:black;
+		text-align:left;
+		pading:100px;
+		margin:100px;
+		border:10px solid black ;}
+		
+		.clearfix {
+  overflow: auto;
+  background-image:linear-gradient(to right ,purple ,  pink , white);
+  color:yellow;
+}
+
+.center {
+  padding: 10px;
+  /* vertical centering of <h1> */
+  text-align: center;
+  /* horizontal centering of <h1> */
+}
+
+.logo {
+  position:absolute;
+  left: 150px;
+  top: 150px;
+  border: 1px solid blue;
+  z-index: 1;
+  /* Make the logo and <h1> overlap */}
+	</style> 
+
+<script>  
+function validateForm() {  
+    //collect form data in JavaScript variables  
+    var pw1 = document.getElementById("pswd1").value;  
+    var pw2 = document.getElementById("pswd2").value;  
+    var name1 = document.getElementById("fname").value;  
+    var name2 = document.getElementById("lname").value;  
+      
+    //check empty first name field  
+    if(name1 == "") {  
+      document.getElementById("blankMsg").innerHTML = "**Fill the first name";  
+      return false;  
+    }  
+      
+    //character data validation  
+    if(!isNaN(name1)){  
+      document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";  
+      return false;  
+    }  
+  
+   //character data validation  
+    if(!isNaN(name2)){  
+      document.getElementById("charMsg").innerHTML = "**Only characters are allowed";  
+      return false;  
+    }   
+    
+    //check empty password field  
+    if(pw1 == "") {  
+      document.getElementById("message1").innerHTML = "**Fill the password please!";  
+      return false;  
+    }  
+    
+    //check empty confirm password field  
+    if(pw2 == "") {  
+      document.getElementById("message2").innerHTML = "**Enter the password please!";  
+      return false;  
+    }   
+     
+    //minimum password length validation  
+    if(pw1.length < 8) {  
+      document.getElementById("message1").innerHTML = "**Password length must be atleast 8 characters";  
+      return false;  
+    }  
+  
+    //maximum length of password validation  
+    if(pw1.length > 15) {  
+      document.getElementById("message1").innerHTML = "**Password length must not exceed 15 characters";  
+      return false;  
+    }  
+    
+    if(pw1 != pw2) {  
+      document.getElementById("message2").innerHTML = "**Passwords are not same";  
+      return false;  
+    } else {  
+      alert ("Your password created successfully");  
+       
+    }  
+ }  
+</script> 
+</head>
+<body style="background-image:linear-gradient(to right ,purple ,  pink , white);">
+<div class="main">
+<div class="clearfix center">
+  <img class="logo" src="C:\Users\Keya Shah\Desktop\wt project      sem 2\download2.jpg" alt="Logo" width="278" height="100">
+
+  <h1>kesha beauty</h1>
+</div>
+<h3 style="font-family:Baskerville old face;color:black;"> 
+Give your skin and hair the much needed holistic care </h3>
+<h2> Register for the best deals now !! </h2>
+<form action="homepage.html" target="_blank" onsubmit ="return validateForm()" validate>
+<!-- Enter first name -->  
+<td> Full Name* </td>  
+<input type = "text" id = "fname" value = "">   
+<span id = "blankMsg" style="color:red"> </span> <br><br>  
+  
+<!-- Enter last name -->  
+<td> Last Name* </td>  
+<input type = "text" id = "lname" value = "">   
+<span id = "charMsg" style="color:red"> </span> <br><br>  
+  
+<!-- Create a new password -->  
+<td> Create Password* </td>  
+<input type = "password" id = "pswd1" value = "">   
+<span id = "message1" style="color:red"> </span> <br><br>  
+  
+
+<td> Confirm Password* </td>  
+<input type = "password" id = "pswd2" value = "">   
+<span id = "message2" style="color:red"> </span> <br><br>  
+  
+<!-- Click to verify valid password -->  
+<input type = "submit" value = "Submit">  
+  
+<!-- Click to reset fields -->  
+<button type = "reset" value = "Reset" >Reset</button>  
+</form>  
+</body>  
+</html>  
+ <a href="login.html">"login"
+</form>
+</div>
+</body>
+</html>   
